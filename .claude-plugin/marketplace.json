@@ -1,0 +1,15 @@
+{
+  "name": "xerpa",
+  "description": "Xerpa plugins for Claude Code and Cowork",
+  "owner": {
+    "name": "Xerpa AI",
+    "url": "https://xerpa.ai"
+  },
+  "plugins": [
+    {
+      "name": "xerpa",
+      "source": "./plugins/xerpa",
+      "description": "The Xerpa connector plus a skill for setting up Xerpa and prepping calls."
+    }
+  ]
+}

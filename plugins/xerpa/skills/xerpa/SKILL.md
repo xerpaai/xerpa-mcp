@@ -1,6 +1,6 @@
 ---
 name: xerpa
-description: Use Xerpa, the real-time sales co-pilot, through its connector. Use when the user says set up Xerpa, prep me for my call, or asks about their calls, Call Map, objections or team numbers.
+description: "Use Xerpa, the real-time sales co-pilot, from Claude. Use whenever the user mentions Xerpa, wants to set up their sales knowledge base, Call Map, objections or battle cards, prep for a sales call, review a past call, or pull sales team numbers. If the Xerpa connector is not attached, this skill says how to add it."
 ---
 
 # Xerpa
@@ -8,6 +8,10 @@ description: Use Xerpa, the real-time sales co-pilot, through its connector. Use
 Xerpa is a real-time sales co-pilot for SDRs and AEs. During a live call the Xerpa desktop app puts guidance on the rep's screen: rebuttals to objections, pain points to dig into, answers from the company's own knowledge base, and whispers that suggest what to say next. Everything on a call is on screen. Xerpa never plays audio and never speaks to the prospect.
 
 The Xerpa connector (a remote MCP server) lets this assistant set Xerpa up, prep calls, look back at past calls and read team reporting. This skill tells you how to use it well.
+
+## Vocabulary
+
+The sales guide is the "Call Map". Whispers are on-screen prompts. "Xerpa Conversations" is where a rep asks Xerpa questions grounded in their calls and CRM.
 
 ## Before anything else: is the connector attached?
 
@@ -57,18 +61,16 @@ If the connector offers the `set_up_xerpa` prompt, it walks the same path tailor
 
 ## Live calls go to the desktop app
 
-Live coaching, whispers, Guide Me, call detection, call recording and live transcription only happen in the Xerpa desktop app, never through the connector. When the user asks for any of them, or is about to get on a call, call `get_desktop_status` and hand off with the download or open link.
+This connector gives you everything around the call: setup, prep, review and reporting. It cannot join or coach a live call. Live coaching, call detection and call recording only happen in the Xerpa desktop app. When the user asks for anything that happens during a call, call `get_desktop_status` and hand off to the app.
 
-## Changing things
+## Confirm before you write
 
-Setup changes are what reps see on their next live call.
+Confirm before you write. Setup edits change what reps see on live calls. Summarize what you are about to save, get a yes, then call the write tool. Delete and restore-defaults tools require `confirm: true`; ask the user first.
 
-- Before any tool that changes Xerpa data, show the user exactly what will change and wait for a clear yes.
-- Deletes and restoring default objections also need `confirm: true`, set only after that yes.
-- Change one thing at a time and read it back after.
+Change one thing at a time and read it back after.
 
 ## Writing for Xerpa
 
-Rebuttals, Call Map coaching and battle cards are read by a rep in the middle of a call. Keep them short and plain: two short lines a rep can say, and a follow-up question. Do not use em dashes. Whispers appear on screen; never describe them as being heard. Say "Call Map" for the sales guide.
+Rebuttals, Call Map coaching and battle cards are read by a rep in the middle of a call. Keep them short and plain: two short lines a rep can say, and a follow-up question. Do not use em dashes. Whispers appear on screen; never describe them as being heard.
 
 Quote numbers as the reporting tools return them. Do not compute new metrics, and say so when a tool has no data.

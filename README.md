@@ -1,17 +1,17 @@
 # Xerpa MCP
 
-Use [Xerpa](https://xerpa.ai), the real-time sales co-pilot, from the AI assistant you already work in: Claude, Claude Code, Cowork, ChatGPT or any MCP client that supports remote servers.
+Use Xerpa from Claude, Claude Code, ChatGPT and any other MCP client.
 
-Xerpa's desktop app coaches reps on live calls: rebuttals to objections, pain points to dig into, answers from your own knowledge base, and whispers that suggest what to say next, all on the rep's screen. Xerpa never plays audio and never speaks to the prospect.
+Xerpa is a real-time sales co-pilot. On a live call the Xerpa desktop app puts guidance on the rep's screen: rebuttals when an objection comes up, pain points to dig into, answers from your own knowledge base, and whispers that suggest what to say next. Xerpa never plays audio and never speaks to the prospect.
 
-The Xerpa connector brings everything around the call into your assistant:
+This connector covers everything around the call, from your own AI agent:
 
-- **Set up Xerpa**: scan your website, load knowledge base documents, build the Call Map (the sales guide reps follow on calls), write objections and rebuttals, draft battle cards.
-- **Prep calls**: your upcoming meetings and the prep card for each, with who you are meeting, deal history, goals and the objections to expect.
-- **Look back**: past calls, debriefs, transcript excerpts and Xerpa Conversations.
-- **Read the numbers**: team dashboards, SDR and AE reporting, objection trends and the leaderboard.
+- **Setup.** Scan your website, load your knowledge base, draft your Call Map, objections and battle cards, without opening the Xerpa web app.
+- **Prep.** Your next meeting with deal history, open questions, the matching case study and the objection to expect.
+- **Review.** Past calls, debriefs, transcript excerpts, and Xerpa Conversations grounded in your calls and CRM.
+- **Reporting.** Team dashboards, SDR and AE reports, objection trends and leaderboards, as answers instead of charts.
 
-Live coaching, whispers, call detection and recording stay in the desktop app. When you ask for them, the connector hands you off to it.
+Live coaching runs in the Xerpa desktop app. The connector tells you when to install it.
 
 This repository holds the public pieces: a Claude Skill and a Claude Code plugin that bundle the connector. The server itself is hosted by Xerpa.
 

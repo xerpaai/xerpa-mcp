@@ -1,6 +1,6 @@
 ---
 name: xerpa
-description: "Use Xerpa, the real-time sales co-pilot, from Claude. Use whenever the user mentions Xerpa, wants to set up their sales knowledge base, Call Map, objections or battle cards, prep for a sales call, review a past call, or pull sales team numbers. If the Xerpa connector is not attached, this skill says how to add it."
+description: "Use Xerpa, the real-time sales co-pilot, from Claude. Use whenever the user mentions Xerpa, wants to set up their sales knowledge base, Talk Track, objections or battle cards, prep for a sales call, review a past call, or pull sales team numbers. If the Xerpa connector is not attached, this skill says how to add it."
 ---
 
 # Xerpa
@@ -11,7 +11,7 @@ The Xerpa connector (a remote MCP server) lets this assistant set Xerpa up, prep
 
 ## Vocabulary
 
-The sales guide is the "Call Map". Whispers are on-screen prompts. "Xerpa Conversations" is where a rep asks Xerpa questions grounded in their calls and CRM.
+The "Talk Track" is the stage-by-stage guide reps follow on calls (the tools call it the sales guide, e.g. `get_sales_guide`); always call it the Talk Track to the user. Battle cards also have their own "talk tracks" (lines to use against a competitor); those are edited with the battle card tools, not `update_sales_guide`. Whispers are on-screen prompts. "Xerpa Conversations" is where a rep asks Xerpa questions grounded in their calls and CRM.
 
 ## Before anything else: is the connector attached?
 
@@ -44,7 +44,7 @@ Call `get_setup_progress` first and say in two sentences where things stand. The
 
 1. Company. On a personal account, scan the website with `scan_company_website` and correct it with `update_company_profile`. Team accounts do this in the Knowledge Center of the Xerpa web app.
 2. Knowledge base. Ask for product docs, pricing, FAQs and case studies, and add each with `add_knowledge_document`.
-3. Call Map, the sales guide reps follow on calls. Read it with `get_sales_guide`, propose stages and what to cover in each, save with `update_sales_guide`.
+3. Talk Track, the stage-by-stage guide reps follow on calls. Read it with `get_sales_guide`, propose stages and what to cover in each, save with `update_sales_guide`.
 4. Objections. Read the library with `list_objections`, add or sharpen rebuttals with `add_objection` and `update_objection`.
 5. Battle cards for the main competitors. On a personal account use `draft_battle_card`; team accounts use the web app.
 6. Invite the reps from the Xerpa web app. Each rep then connects the connector with their own login.
@@ -71,6 +71,6 @@ Change one thing at a time and read it back after.
 
 ## Writing for Xerpa
 
-Rebuttals, Call Map coaching and battle cards are read by a rep in the middle of a call. Keep them short and plain: two short lines a rep can say, and a follow-up question. Do not use em dashes. Whispers appear on screen; never describe them as being heard.
+Rebuttals, Talk Track coaching and battle cards are read by a rep in the middle of a call. Keep them short and plain: two short lines a rep can say, and a follow-up question. Do not use em dashes. Whispers appear on screen; never describe them as being heard.
 
 Quote numbers as the reporting tools return them. Do not compute new metrics, and say so when a tool has no data.

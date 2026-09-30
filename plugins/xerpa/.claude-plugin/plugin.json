@@ -1,8 +1,8 @@
 {
   "name": "xerpa",
   "displayName": "Xerpa",
-  "version": "0.1.1",
-  "description": "Connect Claude Code to Xerpa, the real-time sales co-pilot: set up your knowledge base, Call Map and objections, prep your calls and read your numbers.",
+  "version": "0.1.2",
+  "description": "Connect Claude Code to Xerpa, the real-time sales co-pilot: set up your knowledge base, Talk Track and objections, prep your calls and read your numbers.",
   "author": {
     "name": "Xerpa AI",
     "url": "https://xerpa.ai"

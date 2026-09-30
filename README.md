@@ -6,7 +6,7 @@ Xerpa is a real-time sales co-pilot. On a live call the Xerpa desktop app puts g
 
 This connector covers everything around the call, from your own AI agent:
 
-- **Setup.** Scan your website, load your knowledge base, draft your Call Map, objections and battle cards, without opening the Xerpa web app.
+- **Setup.** Scan your website, load your knowledge base, draft your Talk Track, objections and battle cards, without opening the Xerpa web app.
 - **Prep.** Your next meeting with deal history, open questions, the matching case study and the objection to expect.
 - **Review.** Past calls, debriefs, transcript excerpts, and Xerpa Conversations grounded in your calls and CRM.
 - **Reporting.** Team dashboards, SDR and AE reports, objection trends and leaderboards, as answers instead of charts.

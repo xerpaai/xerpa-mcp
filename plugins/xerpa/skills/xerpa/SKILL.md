@@ -11,7 +11,7 @@ The Xerpa connector (a remote MCP server) lets this assistant set Xerpa up, prep
 
 ## Vocabulary
 
-The "Talk Track" is the stage-by-stage guide reps follow on calls (the tools call it the sales guide, e.g. `get_sales_guide`); always call it the Talk Track to the user. Whispers are on-screen prompts. "Xerpa Conversations" is where a rep asks Xerpa questions grounded in their calls and CRM.
+The "Talk Track" is the stage-by-stage guide reps follow on calls (the tools call it the sales guide, e.g. `get_sales_guide`); always call it the Talk Track to the user. Battle cards also have their own "talk tracks" (lines to use against a competitor); those are edited with the battle card tools, not `update_sales_guide`. Whispers are on-screen prompts. "Xerpa Conversations" is where a rep asks Xerpa questions grounded in their calls and CRM.
 
 ## Before anything else: is the connector attached?
 
